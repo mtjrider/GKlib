@@ -41,10 +41,10 @@ if(${CMAKE_C_COMPILER_ID} MATCHES "Intel")
   set(GKlib_COPTIONS "${GKlib_COPTIONS} -xHost -std=c99")
 endif()
 
-# Set the CPU type 
-if(NO_X86)
-  set(GKlib_COPTIONS "${GKlib_COPTIONS} -DNO_X86=${NO_X86}")
-endif(NO_X86)
+# # Set the CPU type
+# if(NO_X86)
+#   set(GKlib_COPTIONS "${GKlib_COPTIONS} -DNO_X86=${NO_X86}")
+# endif(NO_X86)
 
 
 # Finally set the official C flags.
